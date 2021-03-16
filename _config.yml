@@ -101,12 +101,15 @@ author:
   #  avatar           : # path of avatar image, e.g. "/assets/images/unsplash-image-1"
   avatar           : "/assets/images/fenrir.jpeg"
   bio              : "1일 1커밋을 목표로하는 **코린이** 입니다."
-  location         : "어딘가"
+  location         : "경기도"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:your.name@email.com
+      url: mailto:fenrir4504@gmail.com
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/fenrirD"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -116,9 +119,7 @@ author:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -175,8 +176,8 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
+  #- /docs # ignore Minimal Mistakes /docs
+  #- /test # ignore Minimal Mistakes /test
 keep_files:
   - .git
   - .svn
@@ -202,6 +203,11 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+
+collections:
+  test:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Sass/SCSS
@@ -284,3 +290,21 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+      values:
+        sidebar:
+          nav: "docs"
+  # _test
+  - scope:
+      path: ""
+      type: test
+    values:
+      layout: single
+      author_profile: false
+      share: true
+      sidebar:
+      nav: "test"
+
