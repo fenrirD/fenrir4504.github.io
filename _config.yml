@@ -11,7 +11,7 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
+# remote_theme           : "mistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -101,7 +101,7 @@ author:
   #  avatar           : # path of avatar image, e.g. "/assets/images/unsplash-image-1"
   avatar           : "/assets/images/fenrir.jpeg"
   bio              : "1일 1커밋을 목표로하는 **코린이** 입니다."
-  location         : "경기도"
+  location         : "대한민국"
   email            :
   links:
     - label: "Email"
@@ -284,19 +284,12 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: splash
+      layout: single
       author_profile: true
       read_time: true
       comments: # true
       share: true
       related: true
-  # _docs
-  - scope:
-      path: ""
-      type: docs
-      values:
-        sidebar:
-          nav: "docs"
   # _test
   - scope:
       path: ""
@@ -307,4 +300,5 @@ defaults:
       share: true
       sidebar:
       nav: "test"
+
 

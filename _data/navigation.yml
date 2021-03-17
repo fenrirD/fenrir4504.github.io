@@ -4,10 +4,11 @@ main:
     url: /
   - title: "test_ABCD!!!!"
     url: /test/
+  - title: "ReactNative"
+    url: /categories/rn/
   - title: "react_side"
     url: /Test01/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
